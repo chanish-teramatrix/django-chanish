@@ -1,0 +1,8 @@
+from django.shortcuts import render
+from django.http import HttpResponse
+# Create your views here.
+
+def hello(request):
+	name = 'chanish'
+	responce = "<html><body> hi %s seems to be working fine"%name
+	return HttpResponse(html)

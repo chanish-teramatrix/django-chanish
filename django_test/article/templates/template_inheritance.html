@@ -1,0 +1,56 @@
+<<!DOCTYPE html>
+<html>
+<head>
+	<style>
+		body{
+		    background-color:#000;  
+		}
+
+		a{
+		    text-decoration:none;
+		}
+
+		.topMsg{
+
+		    width:400px;
+		    margin:100px 50px;
+		    text-align:justify
+		}
+
+		.topMsg a,.popMsg a{
+		    color:#FFF; 
+		    font-family:Arial, Helvetica, sans-serif;
+		}
+
+		.topMsg h2, .popMsg h2{
+		    color:#069;
+		    font-size:32px;
+		}
+
+		.popMsg{
+		    width:250px;
+		    margin:100px 50px;
+		    text-align:justify;
+		}
+
+		.popMsg h3{
+		    color:#028;
+		}
+	</style>
+</head>
+<body>
+<div class="topMsg" id="sidebar">
+	{% block sidebar%}
+    <h2> News</h2>
+    <a>lorem</a>
+    {%endblock%}
+</div>
+<div class="popMsg" id="content">
+	{% block content%}
+    <h2>Popular Projects</h2>
+    <h3>Skin Selector</h3>
+    <a> Elorem ipsumlorem ipsumlorem ipsumlorem ipsumlorem ipsum</a>
+    {% endblock %}
+</div>
+</body>
+</html>
