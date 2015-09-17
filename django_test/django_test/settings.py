@@ -102,4 +102,12 @@ USE_TZ = True
 
 STATIC_URL = '/static/'
 
-STATIC_ROOT = '/home/chanish/Downloads/python/django-chanish/django_test/static'
+STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+
+
+STATICFILES_FINDERS  = ('django.contrib.staticfiles.finders.FileSystemFinder',
+                        'django.contrib.staticfiles.finders.AppDirectoriesFinder',
+                        )
+
+
+# STATICFILES_STORAGE = ('django.contrib.staticfiles.storage.StaticFilesStorage',)
