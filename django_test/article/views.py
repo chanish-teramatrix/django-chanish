@@ -32,8 +32,19 @@ class HelloTemplate(TemplateView):
 
 
 def articles(request):
+	language = 'en-us' # stores in cookies
+	session_language = 'en-us' # stores in session
+
+	if 'lang' in request.COOKIES:	
+		language = request.COOKIES['lang']
+
+	if 'lang' in request.session:
+		session_language = request.session['lang']
+
 	return render_to_response('articles.html',
-	  						   {'articles': Article.objects.all()})
+	  						   {'articles': Article.objects.all(),
+	  						   'language': language,
+	  						   'session_language': session_language})
 
 #article_id = 1 has been choosen as default value.
 def article(request, article_id = 1):
@@ -42,3 +53,11 @@ def article(request, article_id = 1):
 
 
 
+def language(request, language='en-us'):
+	responce = HttpResponse('setting language to %s' %language)
+
+	responce.set_cookie('lang',language)
+
+	request.session['lang'] = language
+ 
+	return responce
