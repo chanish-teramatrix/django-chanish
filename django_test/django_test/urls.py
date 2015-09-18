@@ -26,5 +26,15 @@ urlpatterns = [
     url(r'^practice_template/$','article.views.practice_template'),
     url(r'^hello_class_view/$', HelloTemplate.as_view()),
     url(r'^articles/', include('article.urls')),
+
+    #user authorisation urls
+
+    url(r'^accounts/login/$', 'article.views.login'),
+    url(r'^accounts/auth/$', 'article.views.auth_view'),
+    url(r'^accounts/logout/$', 'article.views.logout'),
+    url(r'^accounts/loggedin/$', 'article.views.loggedin'),
+    url(r'^accounts/invalid/$', 'article.views.invalid_login'),
+    url(r'^accounts/register/$', 'article.views.register_user'),
+    url(r'^accounts/register_success/$', 'article.views.register_success'),
 ]
  

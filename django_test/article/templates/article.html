@@ -1,7 +1,14 @@
-<<!DOCTYPE html>
-<html>
-<body>
+<% extends "base.html" %}
+{% block sidebar %}
+<ul>
+	<li><a href = "/articles/all">Articles</a></li>
+</ul>
+{% endblock %}
+
+{% block content %}
 <h1>{{article.title}}</h1>
 <p>{{article.body}}</p>
-</body>
-</html>
+<p>{{article.likes}} people liked this article</p>
+<p><a href="/articles/like/{{article.id}}">Like</a></p>
+
+{% endblock %}
