@@ -473,8 +473,9 @@ class Mailtest(View):
 
     def post(self, request, *args, **kwargs):
 
-        # print request.POST
+        # if key 'subject' doesn't exist then default value will be used
         subject = self.request.POST.get('subject','default')
+        #if value is blank for key then value will be used from dictionary default_values
         if not subject:
             subject = self.default_values['subject']
 
@@ -487,17 +488,19 @@ class Mailtest(View):
             from_email = self.default_values['from_email']
 
         to_email = self.request.POST.get('to_email',settings.DEFAULT_TO_EMAIL)
-        print 'to_email',type(self.recipient_list)
+        print 'to_email',type(to_email),to_email
         if not to_email:
-            recipient_list = self.default_values['to_email']
+            print "--if condition----"
+            self.recipient_list = self.default_values['to_email']
             print "-------recipient list---------",recipient_list
         else:
-            self.recipient_list.append(self,to_email)
-            print "-------recipient list---------",recipient_list
+            print '---else condition----'
+            self.recipient_list.append(to_email)
+            print "-------recipient list---------",self.recipient_list
 
         # sending mail using above attributes
         # TODO: create a CELERY task to send mail
-        send_mail(subject, message, from_email, recipient_list,
+        send_mail(subject, message, from_email, self.recipient_list,
                   fail_silently=False)
 
         return HttpResponse(self.success_url)
