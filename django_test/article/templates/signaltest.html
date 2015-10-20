@@ -1,0 +1,12 @@
+{% extends 'base.html' %}
+
+
+{% block sidebar %}
+<form action="/articles/signaltest/" method="post" enctype="multipart/form-data" >{% csrf_token %}
+    <table>
+        {{signal_form.as_table}}
+    </table>
+    <input type="submit" value="signaltest">
+</form>
+
+{% endblock %}

@@ -1,4 +1,4 @@
-<% extends "base.html" %}
+{% extends "base.html" %}
 {% block sidebar %}
 <ul>
 	<li><a href = "/articles/all">Articles</a></li>
@@ -6,9 +6,15 @@
 {% endblock %}
 
 {% block content %}
-<h1>{{article.title}}</h1>
-<p>{{article.body}}</p>
-<p>{{article.likes}} people liked this article</p>
-<p><a href="/articles/like/{{article.id}}">Like</a></p>
+	<h1>{{article.title}}</h1>
+	<p>{{article.body}}</p>
+	
+	{% if article.thumbnail %}
+
+		<p><img src = "/static/{{article.thumbnail}}" width = "200" /></p>
+	{% endif %}	
+
+	<p>{{article.likes}} people liked this article</p>
+	<p><a href="/articles/like/{{article.id}}">Like</a></p>
 
 {% endblock %}

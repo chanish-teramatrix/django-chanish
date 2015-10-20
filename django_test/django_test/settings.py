@@ -38,6 +38,7 @@ INSTALLED_APPS = (
     'django.contrib.messages',
     'django.contrib.staticfiles',
     'article',
+    # 'south',
 )
 
 MIDDLEWARE_CLASSES = (
@@ -78,7 +79,7 @@ WSGI_APPLICATION = 'django_test.wsgi.application'
 DATABASES = {
     'default': {
         'ENGINE': 'django.db.backends.sqlite3',
-        'NAME': os.path.join(BASE_DIR, 'db.sqlite3'),
+        'NAME': os.path.join(BASE_DIR, 'db. '),
     }
 }
 
@@ -96,6 +97,9 @@ USE_L10N = True
 
 USE_TZ = True
 
+MEDIA_ROOT = '/home/chanish/Downloads/python/django-chanish/django_test/article/static/'
+# MEDIA_ROOT = os.path.join(BASE_DIR, "static/")
+
 
 # Static files (CSS, JavaScript, Images)
 # https://docs.djangoproject.com/en/1.8/howto/static-files/
@@ -103,6 +107,7 @@ USE_TZ = True
 STATIC_URL = '/static/'
 
 STATIC_ROOT = os.path.join(BASE_DIR, "static/")
+# print "\n \nBASE DIRECTORY IS :",BASE_DIR
 
 
 STATICFILES_FINDERS  = ('django.contrib.staticfiles.finders.FileSystemFinder',
@@ -111,3 +116,15 @@ STATICFILES_FINDERS  = ('django.contrib.staticfiles.finders.FileSystemFinder',
 
 
 # STATICFILES_STORAGE = ('django.contrib.staticfiles.storage.StaticFilesStorage',)
+
+#email setting
+# EMAIL_BACKEND = 'dnago.core.mail.backends.filebased.EmailBackend'
+EMAIL_USE_TLS = True
+EMAIL_HOST = 'smtp.gmail.com'
+EMAIL_PORT = 587
+EMAIL_HOST_USER = 'chanish.agarwal1@gmail.com'
+EMAIL_HOST_PASSWORD = 'bqdcetvlpqlevabk'
+DEFAULT_FROM_EMAIL = 'chanish.agarwal1@gmail.com'
+DEFAULT_TO_EMAIL = 'chanishagarwal0@gmail.com'
+
+

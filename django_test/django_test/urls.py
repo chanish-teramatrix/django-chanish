@@ -13,10 +13,14 @@ Including another URLconf
     1. Add an import:  from blog import urls as blog_urls
     2. Add a URL to urlpatterns:  url(r'^blog/', include(blog_urls))
 """
+
+from django.conf import settings
 from django.conf.urls import include, url
 from django.contrib import admin
 from article.views import HelloTemplate
 admin.autodiscover()
+
+from article.views import dbview, dbdata
 
 urlpatterns = [
     url(r'^admin/', include(admin.site.urls)),
@@ -36,5 +40,11 @@ urlpatterns = [
     url(r'^accounts/invalid/$', 'article.views.invalid_login'),
     url(r'^accounts/register/$', 'article.views.register_user'),
     url(r'^accounts/register_success/$', 'article.views.register_success'),
+ 
+
+    url(r'^dbview/$', dbview.as_view()),
+    url(r'^dbview/listing/$', dbdata.as_view(), name='db_view_listing'),
+
+
 ]
  

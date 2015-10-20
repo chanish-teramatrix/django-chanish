@@ -1,0 +1,32 @@
+
+{% load static %}
+<!DOCTYPE html>
+<html>
+<head>
+	<title>{% block title %}My Base Template{% endblock %}</title>
+	<link rel="stylesheet" type="text/css" href="{% static 'css/default.css' %}">
+<!-- 
+	<style type='text/css'>
+		
+	</style> -->
+</head>
+
+<body>
+	<div id= "page">
+		
+	<div id="sidebar">
+		{% block sidebar %}
+		<ul>
+			<li><a href="/articles/all">Articles</a></li>
+			<li><a href="/admin/">Admin</a></li>
+		</ul>
+		{% endblock %}
+	</div>
+
+	<div id='content'>
+		{% block content %}This is content block!{% endblock %}
+
+	</div>	
+	</div>
+</body>
+</html> 

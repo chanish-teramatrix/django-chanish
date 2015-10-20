@@ -1,0 +1,26 @@
+<link rel="stylesheet" href="http://cdn.datatables.net/1.10.9/css/jquery.dataTables.min.css"/>
+
+<table id="first_dtable">
+    <thead></thead>
+    <tbody></tbody>
+</table>
+
+<script type="text/javascript" src="https://code.jquery.com/jquery-1.11.3.min.js"></script>
+<script type="text/javascript" src="http://cdn.datatables.net/1.10.9/js/jquery.dataTables.min.js"></script>
+
+<script type="text/javascript">
+    // Headers
+    var headers_list = JSON.parse('{{ datatable_headers|safe }}');
+    // API url to fetch listing data
+    var api_url = "{% url 'db_view_listing' %}";
+
+    $('#first_dtable').DataTable({
+        'aoColumns': headers_list,
+        'ajax': api_url,
+        'processing': true,
+        'bDestroy': true,
+        'bPaginate': true,
+        'serverSide': true,
+        aLengthMenu: [[5, 10, 25, 50, 100], ['Five', 10, 25, 50, 100]]
+     });
+</script>
