@@ -15,6 +15,7 @@ urlpatterns = [
     url(r'^signaltest/$', 'article.views.signaltest', name='singal_test'),
     url(r'email/$', views.Email.as_view(), name = 'email'),
     url(r'thanks/$', 'article.views.thanks', name='thanks'),
-    url(r'mailtest/$', views.Mailtest.as_view(), name='mail_test')
+    url(r'mailtest/$', views.Mailtest.as_view(), name='mail_test'),
+    url(r'error/$','article.views.error', name='error')
 
 ]

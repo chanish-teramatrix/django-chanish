@@ -1,0 +1,17 @@
+Django==1.8.4
+South==1.0.2
+amqp==1.4.7
+anyjson==0.3.3
+argparse==1.2.1
+billiard==3.3.0.20
+celery==3.1.18
+defusedxml==0.4.1
+django-datatables-view==1.12.1
+django-tastypie==0.12.2
+kombu==3.0.28
+python-dateutil==2.4.2
+python-mimeparse==0.1.4
+pytz==2015.6
+redis==2.10.3
+six==1.9.0
+wsgiref==0.1.2

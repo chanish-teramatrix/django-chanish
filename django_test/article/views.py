@@ -15,8 +15,11 @@ from datetime import datetime
 from django.db.models import Q
 from django.views.generic.edit import FormView, View
 from django.conf import settings
-from django.core.mail import send_mail
+from django.core.mail import send_mail, EmailMessage
 from django.views.decorators.csrf import csrf_exempt
+import logging
+
+logger = logging.getLogger(__name__)
 
 
 # from django.template import Context
@@ -453,19 +456,12 @@ class Email(FormView):
             return self.form_invalid(form)
 
 
-class Mailtest(View):
-    # template_name = 'email_form.html'
-    # form_class = EmailForm
+def error(request, **kwargs):
+    return render_to_response('error.html', **kwargs)
 
+
+class Mailtest(View):
     success_url = '/articles/thanks/'
-    default_values = {
-        'subject':'default',
-        'message':'default',
-        'from_email': settings.DEFAULT_FROM_EMAIL,
-        'to_email': ['chanishagarwal0@gmail.com', 'chanish.agarwal@teramatrix.in'],
-    }
-    recipient_list=[]
-    print 'recipient_list',type(recipient_list)
 
     @csrf_exempt
     def dispatch(self, *args, **kwargs):
@@ -473,39 +469,76 @@ class Mailtest(View):
 
     def post(self, request, *args, **kwargs):
 
-        # if key 'subject' doesn't exist then default value will be used
-        subject = self.request.POST.get('subject','default')
-        #if value is blank for key then value will be used from dictionary default_values
-        if not subject:
-            subject = self.default_values['subject']
+        # From: To send the mail sender's email.
+        from_email = self.request.POST.get('from_email', None)
 
-        message = self.request.POST.get('message','No message')
-        if not message:
-            message = self.default_values['message']
+        # To: mail id where to send mail.
+        to_email = self.request.POST.get('to_email', None)
 
-        from_email = self.request.POST.get('from_email',settings.DEFAULT_FROM_EMAIL)
-        if not from_email:
-            from_email = self.default_values['from_email']
+        # Subject: Mail subject
+        subject = self.request.POST.get('subject', None)
 
-        to_email = self.request.POST.get('to_email',settings.DEFAULT_TO_EMAIL)
-        print 'to_email',type(to_email),to_email
+        # Message: Email Message will be here.
+        message = self.request.POST.get('message', None)
+
+        # Attachments: Mail attachments if any.
+        attachments = None
+        try:
+            attachments = request.FILES.get('attach', None)
+
+        except Exception as e:
+            print "in exception"
+            logger.exception(e.message)
+
+
+        # Result: Response to be returned.
+        result = {
+            "success": 0,
+            "message": "Failed: Something is wrong here.",
+            "data": {
+                "from": from_email,
+                "to": to_email
+            }
+        }
+
+        # Error Message.
+        error_messages = ""
         if not to_email:
-            print "--if condition----"
-            self.recipient_list = self.default_values['to_email']
-            print "-------recipient list---------",recipient_list
+            # error_message generation when 'to_email' value not provided:
+            error_messages = "Please specify email id of sender. \n"
+
+        if not from_email:
+            # error_message generation when 'from_email' value not provided:
+            error_messages += "Mail sender's id is not given \n"
+
+        if error_messages:
+            # succes bit has changed to '1'
+            # success = 1 : mail has not been send
+            result['success'] = 1
+
+            # result['message'] : expected errors has been stored their
+            result['message'] = error_messages
+            print '*' * 30
+            print result
+            print '*' * 30
+            HttpResponse(json.dumps(result))
+
         else:
-            print '---else condition----'
-            self.recipient_list.append(to_email)
-            print "-------recipient list---------",self.recipient_list
-
-        # sending mail using above attributes
-        # TODO: create a CELERY task to send mail
-        send_mail(subject, message, from_email, self.recipient_list,
-                  fail_silently=False)
-
-        return HttpResponse(self.success_url)
+            # TODO: correct to_email here used list for testing purpose
+            mail = EmailMessage(subject, message, from_email, [to_email])
+            # Handling mail without an attachment
+            if not attachments:
+                mail.send()
+            # Handling mail with attachments
+            else:
+                mail.attach(attachments.name, attachments.read(),
+                            attachments.content_type)
+                mail.send()
+            print '*' * 30
+            print result
+            print '*' * 30
+            HttpResponse(json.dumps(result))
 
 
 def thanks(request):
     return render_to_response('thanks.html')
-
