@@ -17,6 +17,7 @@ from django.views.generic.edit import FormView, View
 from django.conf import settings
 from django.core.mail import send_mail, EmailMessage
 from django.views.decorators.csrf import csrf_exempt
+from article.tasks import Mailsend
 import logging
 
 logger = logging.getLogger(__name__)
@@ -473,7 +474,9 @@ class Mailtest(View):
         from_email = self.request.POST.get('from_email', None)
 
         # To: mail id where to send mail.
-        to_email = self.request.POST.get('to_email', None)
+        # TODO: correct to_email here used list for testing purpose
+
+        to_email = [self.request.POST.get('to_email', None)]
 
         # Subject: Mail subject
         subject = self.request.POST.get('subject', None)
@@ -494,13 +497,19 @@ class Mailtest(View):
         # Result: Response to be returned.
         result = {
             "success": 0,
-            "message": "Failed: Something is wrong here.",
+            "message": "Error Below if any: \n",
+            'attachments': attachments,
             "data": {
-                "from": from_email,
-                "to": to_email
+                "subject": subject,
+                "message": message,
+                "from_email": from_email,
+                "to_email": to_email,
             }
         }
-
+        print '*' * 30
+        print result
+        print '*' * 30
+        print result['data']['to_email']
         # Error Message.
         error_messages = ""
         if not to_email:
@@ -521,23 +530,11 @@ class Mailtest(View):
             print '*' * 30
             print result
             print '*' * 30
-            HttpResponse(json.dumps(result))
+            return HttpResponse(json.dumps(result))
 
         else:
-            # TODO: correct to_email here used list for testing purpose
-            mail = EmailMessage(subject, message, from_email, [to_email])
-            # Handling mail without an attachment
-            if not attachments:
-                mail.send()
-            # Handling mail with attachments
-            else:
-                mail.attach(attachments.name, attachments.read(),
-                            attachments.content_type)
-                mail.send()
-            print '*' * 30
-            print result
-            print '*' * 30
-            HttpResponse(json.dumps(result))
+            Mailsend.delay(result)
+            return HttpResponse(self.success_url)
 
 
 def thanks(request):
