@@ -5,12 +5,8 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db75614b-35d4-4cf4-8e82-c228d18de6b1" name="Default" comment="">
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/demp.py" />
-      <change type="NEW" beforePath="" afterPath="$PROJECT_DIR$/django_test/django_test/tasks.py" />
-      <change type="DELETED" beforePath="$PROJECT_DIR$/django_test/article/task.py" afterPath="" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_test/django_test/__init__.py" afterPath="$PROJECT_DIR$/django_test/django_test/__init__.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_test/django_test/celery.py" afterPath="$PROJECT_DIR$/django_test/django_test/celery.py" />
-      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_test/django_test/settings.py" afterPath="$PROJECT_DIR$/django_test/django_test/settings.py" />
+      <change type="DELETED" beforePath="$PROJECT_DIR$/demp.py" afterPath="" />
+      <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_test/article/tasks.py" afterPath="$PROJECT_DIR$/django_test/article/tasks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_test/article/views.py" afterPath="$PROJECT_DIR$/django_test/article/views.py" />
     </list>
     <ignored path="django-chanish.iws" />
@@ -31,14 +27,14 @@
     <favorites_list name="django-chanish" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.46889952">
+    <splitter split-orientation="horizontal" split-proportion="0.7050633">
       <split-first>
         <leaf>
-          <file leaf-file-name="tasks.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/django_test/article/tasks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.7138122">
-                  <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
+                <state vertical-scroll-proportion="0.0">
+                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
                   </folding>
@@ -46,41 +42,33 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="__init__.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_test/django_test/__init__.py">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/capacity_management/views.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_test/django_test/settings.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-18.942858">
-                  <caret line="138" column="32" selection-start-line="138" selection-start-column="32" selection-end-line="138" selection-end-column="32" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_test/django_test/tasks.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+                  <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
           <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
+            <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/dashboard/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-8.285714">
+                  <caret line="252" column="23" selection-start-line="252" selection-start-column="12" selection-end-line="252" selection-end-column="23" />
+                  <folding>
+                    <element signature="e#0#11#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/django_test/article/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-19.028572">
-                  <caret line="535" column="16" selection-start-line="535" selection-start-column="16" selection-end-line="535" selection-end-column="16" />
+                <state vertical-scroll-proportion="-0.7281768">
+                  <caret line="480" column="36" selection-start-line="480" selection-start-column="36" selection-end-line="480" selection-end-column="36" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                     <element signature="e#1330#1405#0" expanded="false" />
@@ -92,21 +80,9 @@
                     <element signature="e#3465#3530#0" expanded="false" />
                     <element signature="e#3956#4006#0" expanded="false" />
                     <element signature="e#4909#5127#0" expanded="false" />
-                    <element signature="e#5162#5483#0" expanded="false" />
                     <element signature="e#9613#9660#0" expanded="false" />
                     <element signature="e#9706#10026#0" expanded="false" />
-                    <element signature="e#13249#13303#0" expanded="false" />
                   </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="celery.py" pinned="false" current-in-tab="false">
-            <entry file="file://$PROJECT_DIR$/django_test/django_test/celery.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
-                  <folding />
                 </state>
               </provider>
             </entry>
@@ -118,8 +94,8 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="69" column="33" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="33" />
+                <state vertical-scroll-proportion="-8.285714">
+                  <caret line="136" column="22" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="22" />
                   <folding />
                 </state>
               </provider>
@@ -138,20 +114,60 @@
           <file leaf-file-name="settings.py" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/settings.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-12.142858">
+                <state vertical-scroll-proportion="-20.885714">
                   <caret line="319" column="6" selection-start-line="319" selection-start-column="6" selection-end-line="319" selection-end-column="6" />
                   <folding />
                 </state>
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="tasks.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/alarm_escalation/tasks.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="2.7367816">
-                  <caret line="256" column="136" selection-start-line="256" selection-start-column="132" selection-end-line="256" selection-end-column="136" />
+                <state vertical-scroll-proportion="-8.285714">
+                  <caret line="412" column="57" selection-start-line="412" selection-start-column="51" selection-end-line="412" selection-end-column="57" />
                   <folding>
                     <element signature="e#145#175#0" expanded="true" />
+                  </folding>
+                </state>
+              </provider>
+            </entry>
+          </file>
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+            <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/device/views.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="0.9781609">
+                  <caret line="2326" column="9" selection-start-line="2326" selection-start-column="8" selection-end-line="2326" selection-end-column="9" />
+                  <folding>
+                    <element signature="e#7330#7568#0" expanded="false" />
+                    <element signature="e#41922#42937#0" expanded="false" />
+                    <element signature="e#58512#59572#0" expanded="false" />
+                    <element signature="e#63470#63690#0" expanded="false" />
+                    <element signature="e#65063#66246#0" expanded="false" />
+                    <element signature="e#71006#71215#0" expanded="false" />
+                    <element signature="e#71290#71342#1" expanded="false" />
+                    <element signature="e#72341#72393#1" expanded="false" />
+                    <element signature="e#75386#76437#0" expanded="false" />
+                    <element signature="e#80938#81127#0" expanded="false" />
+                    <element signature="e#85114#85151#1" expanded="false" />
+                    <element signature="e#85341#86071#0" expanded="false" />
+                    <element signature="e#90182#90366#0" expanded="false" />
+                    <element signature="e#91384#91431#1" expanded="false" />
+                    <element signature="e#92843#94571#0" expanded="false" />
+                    <element signature="e#99628#99814#0" expanded="false" />
+                    <element signature="e#103596#104535#0" expanded="false" />
+                    <element signature="e#104640#107470#0" expanded="false" />
+                    <element signature="e#107539#107725#0" expanded="false" />
+                    <element signature="e#108791#109767#0" expanded="false" />
+                    <element signature="e#109877#113937#0" expanded="false" />
+                    <element signature="e#115226#116052#0" expanded="false" />
+                    <element signature="e#116152#119266#0" expanded="false" />
+                    <element signature="e#119330#119446#0" expanded="false" />
+                    <element signature="e#120376#121228#0" expanded="false" />
+                    <element signature="e#121326#124539#0" expanded="false" />
+                    <element signature="e#124601#124709#0" expanded="false" />
+                    <element signature="e#126530#129481#0" expanded="false" />
+                    <element signature="e#129542#129646#0" expanded="false" />
                   </folding>
                 </state>
               </provider>
@@ -299,7 +315,15 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="django-chanish" />
+              <option name="myItemId" value="NOCOUT" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nocout_gis" />
+              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
+            </PATH_ELEMENT>
+            <PATH_ELEMENT>
+              <option name="myItemId" value="nocout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -309,29 +333,19 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="django-chanish" />
+              <option name="myItemId" value="NOCOUT" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="django_test" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
-            </PATH_ELEMENT>
-          </PATH>
-          <PATH>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django-chanish" />
-              <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.ProjectViewProjectNode" />
-            </PATH_ELEMENT>
-            <PATH_ELEMENT>
-              <option name="myItemId" value="django-chanish" />
+              <option name="myItemId" value="nocout_gis" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="django_test" />
+              <option name="myItemId" value="nocout" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="article" />
+              <option name="myItemId" value="dashboard" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -537,7 +551,7 @@
     <frame x="53" y="24" width="1867" height="1056" extended-state="6" />
     <editor active="true" />
     <layout>
-      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.09327549" sideWeight="0.48715204" order="0" side_tool="false" content_ui="combo" />
+      <window_info id="Project" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14316703" sideWeight="0.4828694" order="0" side_tool="false" content_ui="combo" />
       <window_info id="TODO" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="6" side_tool="false" content_ui="tabs" />
       <window_info id="Event Log" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="7" side_tool="true" content_ui="tabs" />
       <window_info id="Application Servers" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="11" side_tool="false" content_ui="tabs" />
@@ -547,7 +561,7 @@
       <window_info id="Run" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33995584" sideWeight="0.5" order="2" side_tool="false" content_ui="tabs" />
       <window_info id="Structure" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="1" side_tool="false" content_ui="tabs" />
       <window_info id="Terminal" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3289183" sideWeight="0.5" order="10" side_tool="false" content_ui="tabs" />
-      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.21746203" sideWeight="0.51284796" order="2" side_tool="true" content_ui="tabs" />
+      <window_info id="Favorites" active="false" anchor="left" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="true" weight="0.14316703" sideWeight="0.5171306" order="2" side_tool="true" content_ui="tabs" />
       <window_info id="Debug" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.3993576" sideWeight="0.5" order="3" side_tool="false" content_ui="tabs" />
       <window_info id="Cvs" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.25" sideWeight="0.5" order="4" side_tool="false" content_ui="tabs" />
       <window_info id="Message" active="false" anchor="bottom" auto_hide="false" internal_type="DOCKED" type="DOCKED" visible="false" weight="0.33" sideWeight="0.5" order="0" side_tool="false" content_ui="tabs" />
@@ -809,6 +823,9 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="2856" column="43" selection-start-line="2856" selection-start-column="43" selection-end-line="2856" selection-end-column="43" />
+          <folding>
+            <element signature="e#233#242#0" expanded="false" />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -823,50 +840,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.4104903">
           <caret line="234" column="0" selection-start-line="231" selection-start-column="0" selection-end-line="234" selection-end-column="0" />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/device/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.077011496">
-          <caret line="1100" column="77" selection-start-line="1100" selection-start-column="69" selection-end-line="1100" selection-end-column="77" />
-          <folding>
-            <element signature="e#24#35#0" expanded="false" />
-            <element signature="e#7330#7568#0" expanded="false" />
-            <element signature="e#41922#42937#0" expanded="false" />
-            <element signature="e#58512#59572#0" expanded="false" />
-            <element signature="e#59683#63395#0" expanded="false" />
-            <element signature="e#63470#63690#0" expanded="false" />
-            <element signature="e#65063#66246#0" expanded="false" />
-            <element signature="e#66357#70931#0" expanded="false" />
-            <element signature="e#71006#71215#0" expanded="false" />
-            <element signature="e#71290#71342#1" expanded="false" />
-            <element signature="e#72341#72393#1" expanded="false" />
-            <element signature="e#75386#76437#0" expanded="false" />
-            <element signature="e#76544#80867#0" expanded="false" />
-            <element signature="e#80938#81127#0" expanded="false" />
-            <element signature="e#85114#85151#1" expanded="false" />
-            <element signature="e#85341#86071#0" expanded="false" />
-            <element signature="e#86177#90112#0" expanded="false" />
-            <element signature="e#90182#90366#0" expanded="false" />
-            <element signature="e#91384#91431#1" expanded="false" />
-            <element signature="e#92843#94571#0" expanded="false" />
-            <element signature="e#94676#99559#0" expanded="false" />
-            <element signature="e#99628#99814#0" expanded="false" />
-            <element signature="e#103596#104535#0" expanded="false" />
-            <element signature="e#104640#107470#0" expanded="false" />
-            <element signature="e#107539#107725#0" expanded="false" />
-            <element signature="e#108791#109767#0" expanded="false" />
-            <element signature="e#109877#113937#0" expanded="false" />
-            <element signature="e#115226#116052#0" expanded="false" />
-            <element signature="e#116152#119266#0" expanded="false" />
-            <element signature="e#119330#119446#0" expanded="false" />
-            <element signature="e#120376#121228#0" expanded="false" />
-            <element signature="e#121326#124539#0" expanded="false" />
-            <element signature="e#124601#124709#0" expanded="false" />
-            <element signature="e#126530#129481#0" expanded="false" />
-            <element signature="e#129542#129646#0" expanded="false" />
-          </folding>
+          <folding />
         </state>
       </provider>
     </entry>
@@ -919,14 +893,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/demp.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.028475711">
-          <caret line="1" column="34" selection-start-line="1" selection-start-column="34" selection-end-line="1" selection-end-column="34" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -935,36 +901,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/alarm_escalation/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.4073634">
-          <caret line="98" column="39" selection-start-line="98" selection-start-column="37" selection-end-line="98" selection-end-column="39" />
-          <folding>
-            <element signature="e#0#82#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/capacity_management/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.33333334">
-          <caret line="894" column="26" selection-start-line="894" selection-start-column="20" selection-end-line="894" selection-end-column="26" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/django_test/django_test/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
           <caret line="1" column="37" selection-start-line="1" selection-start-column="37" selection-end-line="1" selection-end-column="37" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="69" column="33" selection-start-line="69" selection-start-column="31" selection-end-line="69" selection-end-column="33" />
           <folding />
         </state>
       </provider>
@@ -985,10 +925,10 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/celery.py">
+    <entry file="file://$PROJECT_DIR$/django_test/django_test/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+        <state vertical-scroll-proportion="0.01878453">
+          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
           <folding />
         </state>
       </provider>
@@ -1001,44 +941,126 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/settings.py">
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-12.142858">
-          <caret line="319" column="6" selection-start-line="319" selection-start-column="6" selection-end-line="319" selection-end-column="6" />
+        <state vertical-scroll-proportion="-8.285714">
+          <caret line="136" column="22" selection-start-line="136" selection-start-column="16" selection-end-line="136" selection-end-column="22" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_test/django_test/celery.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
+        <state vertical-scroll-proportion="0.28176796">
           <caret line="19" column="41" selection-start-line="19" selection-start-column="41" selection-end-line="19" selection-end-column="41" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/celery.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="21" column="48" selection-start-line="21" selection-start-column="48" selection-end-line="21" selection-end-column="48" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/nocout/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-20.885714">
+          <caret line="319" column="6" selection-start-line="319" selection-start-column="6" selection-end-line="319" selection-end-column="6" />
           <folding />
         </state>
       </provider>
     </entry>
     <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/alarm_escalation/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="2.7367816">
-          <caret line="256" column="136" selection-start-line="256" selection-start-column="132" selection-end-line="256" selection-end-column="136" />
+        <state vertical-scroll-proportion="-8.285714">
+          <caret line="412" column="57" selection-start-line="412" selection-start-column="51" selection-end-line="412" selection-end-column="57" />
           <folding>
             <element signature="e#145#175#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/tasks.py">
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/device/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.9781609">
+          <caret line="2326" column="9" selection-start-line="2326" selection-start-column="8" selection-end-line="2326" selection-end-column="9" />
+          <folding>
+            <element signature="e#7330#7568#0" expanded="false" />
+            <element signature="e#41922#42937#0" expanded="false" />
+            <element signature="e#58512#59572#0" expanded="false" />
+            <element signature="e#63470#63690#0" expanded="false" />
+            <element signature="e#65063#66246#0" expanded="false" />
+            <element signature="e#71006#71215#0" expanded="false" />
+            <element signature="e#71290#71342#1" expanded="false" />
+            <element signature="e#72341#72393#1" expanded="false" />
+            <element signature="e#75386#76437#0" expanded="false" />
+            <element signature="e#80938#81127#0" expanded="false" />
+            <element signature="e#85114#85151#1" expanded="false" />
+            <element signature="e#85341#86071#0" expanded="false" />
+            <element signature="e#90182#90366#0" expanded="false" />
+            <element signature="e#91384#91431#1" expanded="false" />
+            <element signature="e#92843#94571#0" expanded="false" />
+            <element signature="e#99628#99814#0" expanded="false" />
+            <element signature="e#103596#104535#0" expanded="false" />
+            <element signature="e#104640#107470#0" expanded="false" />
+            <element signature="e#107539#107725#0" expanded="false" />
+            <element signature="e#108791#109767#0" expanded="false" />
+            <element signature="e#109877#113937#0" expanded="false" />
+            <element signature="e#115226#116052#0" expanded="false" />
+            <element signature="e#116152#119266#0" expanded="false" />
+            <element signature="e#119330#119446#0" expanded="false" />
+            <element signature="e#120376#121228#0" expanded="false" />
+            <element signature="e#121326#124539#0" expanded="false" />
+            <element signature="e#124601#124709#0" expanded="false" />
+            <element signature="e#126530#129481#0" expanded="false" />
+            <element signature="e#129542#129646#0" expanded="false" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/alarm_escalation/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-1.0287293">
+          <caret line="21" column="43" selection-start-line="21" selection-start-column="43" selection-end-line="21" selection-end-column="43" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/capacity_management/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="1" column="0" selection-start-line="1" selection-start-column="0" selection-end-line="1" selection-end-column="0" />
+          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
           <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/dashboard/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-8.285714">
+          <caret line="252" column="23" selection-start-line="252" selection-start-column="12" selection-end-line="252" selection-end-column="23" />
+          <folding>
+            <element signature="e#0#11#0" expanded="true" />
+          </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/django_test/article/tasks.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="0.0">
+          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
+          <folding>
+            <element signature="e#0#38#0" expanded="true" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/django_test/article/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-19.028572">
-          <caret line="535" column="16" selection-start-line="535" selection-start-column="16" selection-end-line="535" selection-end-column="16" />
+        <state vertical-scroll-proportion="-0.7281768">
+          <caret line="480" column="36" selection-start-line="480" selection-start-column="36" selection-end-line="480" selection-end-column="36" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#1330#1405#0" expanded="false" />
@@ -1050,20 +1072,8 @@
             <element signature="e#3465#3530#0" expanded="false" />
             <element signature="e#3956#4006#0" expanded="false" />
             <element signature="e#4909#5127#0" expanded="false" />
-            <element signature="e#5162#5483#0" expanded="false" />
             <element signature="e#9613#9660#0" expanded="false" />
             <element signature="e#9706#10026#0" expanded="false" />
-            <element signature="e#13249#13303#0" expanded="false" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
-    <entry file="file://$PROJECT_DIR$/django_test/article/tasks.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.7138122">
-          <caret line="38" column="0" selection-start-line="38" selection-start-column="0" selection-end-line="38" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#38#0" expanded="true" />
           </folding>
         </state>
       </provider>

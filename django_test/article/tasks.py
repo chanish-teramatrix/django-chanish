@@ -17,7 +17,7 @@ def Mailsend(result):
     result = {
     success : bit represents either mail successfully delivered or not 0:Delivered, 1:Not Delivered
     message : Contains error message if there any
-    attachments: This is file attachments variable
+    attachments: Contains list of file objects
         data = {
         subject : mail subject
         message : Message Body
@@ -31,16 +31,15 @@ def Mailsend(result):
     mail = EmailMessage(result['data']['subject'], result['data']['message'],
                         result['data']['from_email'],
                         result['data']['to_email'])
-
-
     # Handling mail without an attachment.
     if not result['attachments']:
         mail.send()
 
     # Mail with attachments.
     else:
-        mail.attach(result['attachments'].name, result['attachments'].read(),
-                    result['attachments'].content_type)
+        for attachment in result['attachments']:
+            mail.attach(attachment.name, attachment.read(),
+                        attachment.content_type)
         mail.send()
 
     return True

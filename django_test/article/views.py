@@ -469,14 +469,43 @@ class Mailtest(View):
         return super(Mailtest, self).dispatch(*args, **kwargs)
 
     def post(self, request, *args, **kwargs):
+        """
+        :param request:
+        :param args:
+            subject: Mail subject
+            message: Email Message will be here.
+            from_email:sender's email.
+            to_email : List of email id where to send mail.
+            attachments: Mail attachments if any.
+            success : success bit
+            error_message: error log
 
+        :param kwargs:
+                result = {
+                            success : bit represents either mail successfully delivered or not 0:Delivered, 1:Not Delivered
+                            message : Contains error message if there any
+                            attachments: Contains list of file objects
+                            data = {
+                                    subject : mail subject
+                                    message : Message Body
+                                    from_email : sender email id
+                                    to_email : List/Tuple of receivers email id's
+                                    }
+                            }
+        :return: Json data.
+        """
         # From: To send the mail sender's email.
         from_email = self.request.POST.get('from_email', None)
 
-        # To: mail id where to send mail.
-        # TODO: correct to_email here used list for testing purpose
 
-        to_email = [self.request.POST.get('to_email', None)]
+        to_email = self.request.POST.get('to_email')
+        if to_email:
+            # IF condition: if multiple values then by using eval converting into list.
+            if "," in to_email:
+                to_email = eval(to_email)
+            #
+            else:
+                to_email=to_email.split(",")
 
         # Subject: Mail subject
         subject = self.request.POST.get('subject', None)
@@ -487,7 +516,8 @@ class Mailtest(View):
         # Attachments: Mail attachments if any.
         attachments = None
         try:
-            attachments = request.FILES.get('attach', None)
+            attachments=[]
+            attachments = request.FILES.values()
 
         except Exception as e:
             print "in exception"
@@ -497,7 +527,7 @@ class Mailtest(View):
         # Result: Response to be returned.
         result = {
             "success": 0,
-            "message": "Error Below if any: \n",
+            "message": "No Error:",
             'attachments': attachments,
             "data": {
                 "subject": subject,
@@ -506,30 +536,25 @@ class Mailtest(View):
                 "to_email": to_email,
             }
         }
-        print '*' * 30
-        print result
-        print '*' * 30
-        print result['data']['to_email']
+
         # Error Message.
         error_messages = ""
         if not to_email:
             # error_message generation when 'to_email' value not provided:
-            error_messages = "Please specify email id of sender. \n"
+            error_messages += "Please specify email id of sender. \n"
 
         if not from_email:
             # error_message generation when 'from_email' value not provided:
             error_messages += "Mail sender's id is not given \n"
 
         if error_messages:
-            # succes bit has changed to '1'
-            # success = 1 : mail has not been send
+            # Change Succes bit to 1.
+            # Success = 1 : mail has not been send
             result['success'] = 1
 
-            # result['message'] : expected errors has been stored their
+            # Arg: result['message'] : expected errors has been stored here.
             result['message'] = error_messages
-            print '*' * 30
-            print result
-            print '*' * 30
+
             return HttpResponse(json.dumps(result))
 
         else:
