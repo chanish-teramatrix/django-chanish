@@ -462,6 +462,50 @@ def error(request, **kwargs):
 
 
 class Mailtest(View):
+    """
+    Get detailed data to send mail subject, message, from_email, to_email , attachments if any.
+
+    Usage: Used to send mail to multiple mail id's with multiple attachment
+
+    URL: http://127.0.0.1:8000/articles/mailtest/
+
+    Args:
+        subject (unicode): Mail subject
+        message (unicode): Email Message will be here.
+        from_email (unicode):sender's email.
+        to_email (list): List of email id where to send mail.
+        attachments(list): Mail attachments if any(file object).
+        success(int) : success bit either 0/1
+        error_message(string): error log
+
+    Kwargs:
+        result = {
+                    success : bit represents either mail successfully delivered or not 0:Delivered, 1:Not Delivered
+                    message : Contains error message if there any
+                    attachments: Contains list of file objects
+                    data = {
+                            subject : mail subject
+                            message : Message Body
+                            from_email : sender email id
+                            to_email : List/Tuple of receivers email id's
+                            }
+                    }
+    :return: Json data.
+            For e.g.,
+                result = {
+                    'message': 'No Error:',
+                    'attachments': [<InMemoryUploadedFile: Resume- Praveen Kumar Agarwal.pdf (application/octet-stream)>, <InMemoryUploadedFile: IMG-20151020-WA0000.jpg (image/jpeg)>],
+                    'success': 0
+                    'data':
+                        {
+                        'message': u'curl message',
+                        'from_email': u'chanish.agarwal1@gmail.com',
+                        'to_email': [u'chanish.agarwal@teramatrix.in'],
+                        'subject': u'curl'
+                        },
+                    }
+
+"""
     success_url = '/articles/thanks/'
 
     @csrf_exempt
@@ -469,31 +513,7 @@ class Mailtest(View):
         return super(Mailtest, self).dispatch(*args, **kwargs)
 
     def post(self, request, *args, **kwargs):
-        """
-        :param request:
-        :param args:
-            subject: Mail subject
-            message: Email Message will be here.
-            from_email:sender's email.
-            to_email : List of email id where to send mail.
-            attachments: Mail attachments if any.
-            success : success bit
-            error_message: error log
 
-        :param kwargs:
-                result = {
-                            success : bit represents either mail successfully delivered or not 0:Delivered, 1:Not Delivered
-                            message : Contains error message if there any
-                            attachments: Contains list of file objects
-                            data = {
-                                    subject : mail subject
-                                    message : Message Body
-                                    from_email : sender email id
-                                    to_email : List/Tuple of receivers email id's
-                                    }
-                            }
-        :return: Json data.
-        """
         # From: To send the mail sender's email.
         from_email = self.request.POST.get('from_email', None)
 
@@ -516,13 +536,11 @@ class Mailtest(View):
         # Attachments: Mail attachments if any.
         attachments = None
         try:
-            attachments=[]
+            # List of file objects
             attachments = request.FILES.values()
 
         except Exception as e:
-            print "in exception"
             logger.exception(e.message)
-
 
         # Result: Response to be returned.
         result = {
@@ -540,11 +558,11 @@ class Mailtest(View):
         # Error Message.
         error_messages = ""
         if not to_email:
-            # error_message generation when 'to_email' value not provided:
+            # error_message generation when 'to_email' value not provided.
             error_messages += "Please specify email id of sender. \n"
 
         if not from_email:
-            # error_message generation when 'from_email' value not provided:
+            # error_message generation when 'from_email' value not provided.
             error_messages += "Mail sender's id is not given \n"
 
         if error_messages:
@@ -558,6 +576,7 @@ class Mailtest(View):
             return HttpResponse(json.dumps(result))
 
         else:
+            # Validated data passed to celery task.
             Mailsend.delay(result)
             return HttpResponse(self.success_url)
 

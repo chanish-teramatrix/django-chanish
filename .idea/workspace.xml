@@ -5,7 +5,6 @@
   </component>
   <component name="ChangeListManager">
     <list default="true" id="db75614b-35d4-4cf4-8e82-c228d18de6b1" name="Default" comment="">
-      <change type="DELETED" beforePath="$PROJECT_DIR$/demp.py" afterPath="" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_test/article/tasks.py" afterPath="$PROJECT_DIR$/django_test/article/tasks.py" />
       <change type="MODIFICATION" beforePath="$PROJECT_DIR$/django_test/article/views.py" afterPath="$PROJECT_DIR$/django_test/article/views.py" />
     </list>
@@ -27,38 +26,16 @@
     <favorites_list name="django-chanish" />
   </component>
   <component name="FileEditorManager">
-    <splitter split-orientation="horizontal" split-proportion="0.7050633">
+    <splitter split-orientation="horizontal" split-proportion="0.5651899">
       <split-first>
         <leaf>
           <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
             <entry file="file://$PROJECT_DIR$/django_test/article/tasks.py">
               <provider selected="true" editor-type-id="text-editor">
                 <state vertical-scroll-proportion="0.0">
-                  <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
+                  <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
                   <folding>
                     <element signature="e#0#38#0" expanded="true" />
-                  </folding>
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/capacity_management/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.0">
-                  <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-                  <folding />
-                </state>
-              </provider>
-            </entry>
-          </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
-            <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/dashboard/views.py">
-              <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-8.285714">
-                  <caret line="252" column="23" selection-start-line="252" selection-start-column="12" selection-end-line="252" selection-end-column="23" />
-                  <folding>
-                    <element signature="e#0#11#0" expanded="true" />
                   </folding>
                 </state>
               </provider>
@@ -67,8 +44,8 @@
           <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
             <entry file="file://$PROJECT_DIR$/django_test/article/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="-0.7281768">
-                  <caret line="480" column="36" selection-start-line="480" selection-start-column="36" selection-end-line="480" selection-end-column="36" />
+                <state vertical-scroll-proportion="1.1137931">
+                  <caret line="542" column="39" selection-start-line="542" selection-start-column="39" selection-end-line="542" selection-end-column="39" />
                   <folding>
                     <element signature="e#0#11#0" expanded="true" />
                     <element signature="e#1330#1405#0" expanded="false" />
@@ -121,6 +98,16 @@
               </provider>
             </entry>
           </file>
+          <file leaf-file-name="api.py" pinned="false" current-in-tab="true">
+            <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/device/api.py">
+              <provider selected="true" editor-type-id="text-editor">
+                <state vertical-scroll-proportion="-0.77016574">
+                  <caret line="574" column="24" selection-start-line="574" selection-start-column="17" selection-end-line="574" selection-end-column="24" />
+                  <folding />
+                </state>
+              </provider>
+            </entry>
+          </file>
           <file leaf-file-name="tasks.py" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/alarm_escalation/tasks.py">
               <provider selected="true" editor-type-id="text-editor">
@@ -133,10 +120,10 @@
               </provider>
             </entry>
           </file>
-          <file leaf-file-name="views.py" pinned="false" current-in-tab="true">
+          <file leaf-file-name="views.py" pinned="false" current-in-tab="false">
             <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/device/views.py">
               <provider selected="true" editor-type-id="text-editor">
-                <state vertical-scroll-proportion="0.9781609">
+                <state vertical-scroll-proportion="-24.314285">
                   <caret line="2326" column="9" selection-start-line="2326" selection-start-column="8" selection-end-line="2326" selection-end-column="9" />
                   <folding>
                     <element signature="e#7330#7568#0" expanded="false" />
@@ -345,7 +332,7 @@
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
             <PATH_ELEMENT>
-              <option name="myItemId" value="dashboard" />
+              <option name="myItemId" value="device" />
               <option name="myItemType" value="com.intellij.ide.projectView.impl.nodes.PsiDirectoryNode" />
             </PATH_ELEMENT>
           </PATH>
@@ -621,16 +608,6 @@
     <watches-manager />
   </component>
   <component name="editorHistoryManager">
-    <entry file="file://$PROJECT_DIR$/django_test/django_test/forms.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="0" column="0" selection-start-line="0" selection-start-column="0" selection-end-line="0" selection-end-column="0" />
-          <folding>
-            <element signature="e#0#24#0" expanded="true" />
-          </folding>
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/lib/python2.7/site-packages/Django-1.8.4-py2.7.egg/django/forms/models.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
@@ -985,7 +962,7 @@
     </entry>
     <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/device/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.9781609">
+        <state vertical-scroll-proportion="-24.314285">
           <caret line="2326" column="9" selection-start-line="2326" selection-start-column="8" selection-end-line="2326" selection-end-column="9" />
           <folding>
             <element signature="e#7330#7568#0" expanded="false" />
@@ -1029,17 +1006,9 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/capacity_management/views.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="0.0">
-          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
-          <folding />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/dashboard/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-8.285714">
+        <state vertical-scroll-proportion="0.33333334">
           <caret line="252" column="23" selection-start-line="252" selection-start-column="12" selection-end-line="252" selection-end-column="23" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
@@ -1047,10 +1016,26 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/capacity_management/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="4.1558013">
+          <caret line="251" column="0" selection-start-line="251" selection-start-column="0" selection-end-line="251" selection-end-column="0" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$USER_HOME$/Documents/NOCOUT/nocout_gis/nocout/device/api.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state vertical-scroll-proportion="-0.77016574">
+          <caret line="574" column="24" selection-start-line="574" selection-start-column="17" selection-end-line="574" selection-end-column="24" />
+          <folding />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/django_test/article/tasks.py">
       <provider selected="true" editor-type-id="text-editor">
         <state vertical-scroll-proportion="0.0">
-          <caret line="16" column="0" selection-start-line="16" selection-start-column="0" selection-end-line="26" selection-end-column="5" />
+          <caret line="37" column="18" selection-start-line="37" selection-start-column="18" selection-end-line="37" selection-end-column="18" />
           <folding>
             <element signature="e#0#38#0" expanded="true" />
           </folding>
@@ -1059,8 +1044,8 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/django_test/article/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state vertical-scroll-proportion="-0.7281768">
-          <caret line="480" column="36" selection-start-line="480" selection-start-column="36" selection-end-line="480" selection-end-column="36" />
+        <state vertical-scroll-proportion="1.1137931">
+          <caret line="542" column="39" selection-start-line="542" selection-start-column="39" selection-end-line="542" selection-end-column="39" />
           <folding>
             <element signature="e#0#11#0" expanded="true" />
             <element signature="e#1330#1405#0" expanded="false" />

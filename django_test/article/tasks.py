@@ -13,18 +13,18 @@ def Mailsend(result):
     """
     This is a Celery function which send mail for given parameters(valid and checked) used If Else for case of attachments availability
 
-    :Args:
-    result = {
-    success : bit represents either mail successfully delivered or not 0:Delivered, 1:Not Delivered
-    message : Contains error message if there any
-    attachments: Contains list of file objects
-        data = {
-        subject : mail subject
-        message : Message Body
-        from_email : sender email id
-        to_email : List/Tuple of receivers email id's
+    : kwargs:
+        result = {
+        success : bit represents either mail successfully delivered or not 0:Delivered, 1:Not Delivered
+        message : Contains error message if there any
+        attachments: Contains list of file objects
+            data = {
+            subject : mail subject
+            message : Message Body
+            from_email : sender email id
+            to_email : List/Tuple of receivers email id's
+            }
         }
-    }
 
     :return: True/False
     """
